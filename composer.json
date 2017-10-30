@@ -28,6 +28,7 @@
         "2amigos/yii2-selectize-widget": "*",
         "mihaildev/yii2-elfinder": "*",
         "loveorigami/yii2-notification-wrapper": "*",
+        "dmstr/yii2-adminlte-asset": ">2",
         "bower-asset/admin-lte": "*",
         "bower-asset/html5shiv": "*",
         "bower-asset/timecircles": "*",
@@ -49,7 +50,15 @@
     "config": {
         "process-timeout": 1800,
         "preferred-install": "dist",
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "fxp-asset": {
+            "repositories": {
+                "bower-asset/eve": {
+                    "type": "bower-vcs",
+                    "url": "https://github.com/adobe-webplatform/eve.git"
+                }
+            }
+        }
     },
     "repositories": [
         {
